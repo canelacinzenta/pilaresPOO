@@ -1,7 +1,14 @@
 package heranca;
 
-public class Telegram {
+public class Telegram extends ServicoMensagemInstantanea{
+	
 	public void enviarMensagem() {
+		System.out.println("Enviando mensagem pelo Telegram");
+	}
+	public void receberMensagem() {
+		System.out.println("Recebendo mensagem pelo Telegram");
+	}
+	/*public void enviarMensagem() {
 		validarConectadoInternet();
 		System.out.println("Enviando mensagem telegram");
 		salvarHistoricoMensagem();
@@ -14,5 +21,5 @@ public class Telegram {
 	}
 	private void salvarHistoricoMensagem() {
 		System.out.println("Salvando histórico de mensagem");
-	}
+	}*/
 }
